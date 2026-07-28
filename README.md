@@ -62,6 +62,11 @@ printed back. The reaction table gains an `Equiv (vs A)` row showing each
 reactant's amount as a multiple of A.
 
 ![screenshot](images/screenshot.png)
+-------------
+![screenshot](images/screenshot2.png)
+-------------
+![screenshot](images/screenshot3.png)
+
 
 ## Commands
 
