@@ -1,4 +1,4 @@
-# chemcalc: calculation for Organic Chemistry Research.
+# chemcalc: calculation for Organic Chemistry Research
 command-line tool for common organic chemistry bench calculations.
 ## Build
 
@@ -53,38 +53,15 @@ one product.
 
 Only reactant **A** is entered as a mass.
 Every later reactant is entered as *how many times A's mmol* it should be,
-and `react` works out the mass for you:
-
-```
-== Reactants == Blank formula to finish (need at least 1).
-Prefix a coefficient for equivalents, e.g. 2NaHCO3. Case is ignored.
-Reactant A is weighed out; the rest are given as a multiple of A's mmol.
-Reactant A formula (e.g. 2NaHCO3), or blank to stop: C16H10
-Reactant A mass value: 200
-Reactant A unit [g/mg] (default mg): mg
-Reactant B formula (e.g. 2NaHCO3), or blank to stop: 4Br2
-Reactant B mmol relative to A [default 4 x], or a mass like "500 mg":
-  -> 3.9554 mmol, 632.102 mg
-Reactant C formula (e.g. 2NaHCO3), or blank to stop:
-```
-
+and `react` works out the mass for you.
 Blank takes the default, which is the ratio the coefficients already
 imply (`4Br2` against `C16H10` → 4×). Type a bare number to override it,
 e.g. `4.4` for a 10 % excess. To give a real weighed mass instead, type a
 number *with* a unit (`500 mg`, `0.5 g`); the ratio it works out to is
 printed back. The reaction table gains an `Equiv (vs A)` row showing each
-reactant's amount as a multiple of A:
+reactant's amount as a multiple of A.
 
-```
-+---------------+------------+---------+-------------+
-|               | A:C16H10 * | B:4 Br2 | P1:C16H6Br4 |
-+---------------+------------+---------+-------------+
-| MW (g/mol)    | 202.256    | 159.808 | 517.840     |
-| Mass (mg)     | 200.000    | 632.102 | 512.064     |
-| Moles (mmol)  | 0.9888     | 3.9554  | 0.9888      |
-| Equiv (vs A)  | 1          | 4       | -           |
-...
-```
+![screenshot](images/screenshot.png)
 
 ## Commands
 
